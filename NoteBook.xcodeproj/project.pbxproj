@@ -14,6 +14,7 @@
 		A6F82D062473446600AFDC0A /* NoteBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6F82D042473446600AFDC0A /* NoteBook.xcdatamodeld */; };
 		A6F82D082473446D00AFDC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F82D072473446D00AFDC0A /* Assets.xcassets */; };
 		A6F82D0B2473446D00AFDC0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F82D092473446D00AFDC0A /* LaunchScreen.storyboard */; };
+		A6F82D13247349C500AFDC0A /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F82D12247349C500AFDC0A /* detailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A6F82D072473446D00AFDC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F82D0A2473446D00AFDC0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6F82D0C2473446D00AFDC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F82D12247349C500AFDC0A /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				A6F82CFD2473446600AFDC0A /* SceneDelegate.swift */,
 				A6F82CFF2473446600AFDC0A /* ViewController.swift */,
 				A6F82D012473446600AFDC0A /* Main.storyboard */,
+				A6F82D12247349C500AFDC0A /* detailsVC.swift */,
 				A6F82D072473446D00AFDC0A /* Assets.xcassets */,
 				A6F82D092473446D00AFDC0A /* LaunchScreen.storyboard */,
 				A6F82D0C2473446D00AFDC0A /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				A6F82D002473446600AFDC0A /* ViewController.swift in Sources */,
 				A6F82CFC2473446600AFDC0A /* AppDelegate.swift in Sources */,
+				A6F82D13247349C500AFDC0A /* detailsVC.swift in Sources */,
 				A6F82D062473446600AFDC0A /* NoteBook.xcdatamodeld in Sources */,
 				A6F82CFE2473446600AFDC0A /* SceneDelegate.swift in Sources */,
 			);
