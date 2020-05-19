@@ -50,8 +50,13 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                     if let tcNumber = result.value(forKey: "tcnumber") as? Int {
                         tcnumberText.text = String(tcNumber)
                     }
+                    if let iban = result.value(forKey: "iban") as? Int {
+                        ibanText.text = String(iban)
+                    }
+                    
                     if let imageData = result.value(forKey: "image") as? Data {
                         let image = UIImage(data: imageData)
+                        imageView.image = image
                     }
                     }
                 }

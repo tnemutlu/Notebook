@@ -84,6 +84,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedDatabase = nameArray[indexPath.row]
+        selectedDatabaseId = idArray[indexPath.row]
         performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
     
