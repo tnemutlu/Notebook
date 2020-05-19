@@ -50,10 +50,9 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                     if let tcNumber = result.value(forKey: "tcnumber") as? Int {
                         tcnumberText.text = String(tcNumber)
                     }
-                    if let iban = result.value(forKey: "iban") as? String {
-                        ibanText.text = iban
+                    if let iban = result.value(forKey: "iban") as? Int {
+                    ibanText.text = String(iban)
                     }
-                    
                     if let imageData = result.value(forKey: "image") as? Data {
                         let image = UIImage(data: imageData)
                         imageView.image = image
@@ -107,13 +106,14 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         newDatabase.setValue(nameText.text!, forKey: "name")
         newDatabase.setValue(birthdayText.text!, forKey: "birthday")
-        newDatabase.setValue(ibanText.text!, forKey: "iban")
         newDatabase.setValue(UUID(), forKey: "id")
         
         if let tcNumber = Int(tcnumberText.text!) {
         newDatabase.setValue(tcNumber, forKey: "tcnumber")
     }
-        
+        if let ibanNum = Int(ibanText.text!) {
+            newDatabase.setValue(ibanNum, forKey: "iban")
+        }
         let data = imageView.image!.jpegData(compressionQuality: 0.5)
         newDatabase.setValue(data, forKey: "image")
         
