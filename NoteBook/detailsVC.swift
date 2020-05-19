@@ -64,7 +64,6 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
             saveButton.isEnabled = false
         }
         
-        
         imageView.isUserInteractionEnabled = true
         let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
         imageView.addGestureRecognizer(imageTapRecognizer)
